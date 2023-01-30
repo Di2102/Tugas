@@ -31,7 +31,7 @@ class Home extends BaseController
                 ];
                 $log     = $m_user->log($data);
                 $session->set('username', $username);
-                //$session->setFlashdata('sukses', 'Hai ' . $user['username'] . ', Anda berhasil login');
+                //$session->setFlashdata('sukses', 'Hello ' . $user['username'] . ', Anda sukses login');
 
                 return redirect()->to(base_url('dashboard'));
             }
